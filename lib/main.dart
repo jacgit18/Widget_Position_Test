@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: MyHomePage(title: 'Test1 - Joshua Carpentier' ),
     );
   }
 }
@@ -45,9 +45,10 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
-  final String afeild = "Josh Carpen" ;
+  final String afeild = "Test1 Joshua Carpentier" ;
   final double height = 70;
   final double width = 70;
+  final double fontsize = 10;
   final colorB = Colors.blue;
   final colorO = Colors.orange;
   final colorG = Colors.green;
@@ -80,147 +81,182 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body:
-      Row(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: <Widget>[
-      Row(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: <Widget>[
-          Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Container(
-              padding: EdgeInsets.all(10.0),
-              height: height,
-              width: width,
-              color: Colors.lightGreen,
-              child: Text(afeild,style: TextStyle(
-                fontSize: 15,
-                color: Colors.red,
-              ),),
-            ),
-            SizedBox(height: height * 3,),
-            Container(
-              padding: EdgeInsets.all(10.0),
-              height: height,
-              width: width,
-              color: Colors.red,
-              child: Text(afeild),
-            )
-          ],
-          ),
-            ],
-              ),
-        Row(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: <Widget>[
-          Column(
+      Padding(
+        padding: const EdgeInsets.fromLTRB(5, 0, 0, 0),
+        child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-            Container(
-              padding: EdgeInsets.all(10.0),
-              height: height,
-              width: width,
-              color: Colors.yellow,
-              child: Text(afeild),
-            ),
-              SizedBox(height: height * 1.5,),
-              Container(
-              padding: EdgeInsets.all(10.0),
-              height: height,
-              width: width,
-              color: Colors.lightGreen,
-              child: Text(afeild),
-              )
-            ],
-          ),
-        ],
-        ),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-          Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-
-              Container(
-                padding: EdgeInsets.all(10.0),
-                height: height,
-                width: width,
-                color: Colors.grey,
-                child: Text(afeild),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      Container(
+                        padding: EdgeInsets.all(10.0),
+                        height: height,
+                        width: width,
+                        color: Colors.deepPurple,
+                        child: Text(afeild,style: TextStyle(
+                          fontSize: fontsize,
+                          color: Colors.lightBlue[500],
+                        ),),
+                      ),
+                      SizedBox(height: height * 6.5,),
+                      Container(
+                        padding: EdgeInsets.all(10.0),
+                        height: height,
+                        width: width,
+                        color: Colors.indigo[600],
+                        child: Text(afeild,style: TextStyle(
+                          fontSize: fontsize,
+                          color: Colors.purpleAccent,
+                        ),),
+                      )
+                    ],
+                  ),
+                ],
               ),
-              Container(
-                padding: EdgeInsets.all(10.0),
-                height: height,
-                width: width,
-                color: Colors.green,
-                child: Text(afeild),
-              )
-            ],
-          ),
-          ],
-        ),
-
-        Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-          Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              Container(
-                padding: EdgeInsets.all(10.0),
-                height: height,
-                width: width,
-                color: Colors.lightGreen,
-                child: Text(afeild),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      Container(
+                        padding: EdgeInsets.all(10.0),
+                        height: height,
+                        width: width,
+                        color: Colors.blueGrey,
+                        child: Text(afeild,style: TextStyle(
+                          fontSize: fontsize,
+                          color: Colors.yellow[400],
+                        ),),
+                      ),
+                      SizedBox(height: height * 5,),
+                      Container(
+                        padding: EdgeInsets.all(10.0),
+                        height: height,
+                        width: width,
+                        color: Colors.cyanAccent,
+                        child: Text(afeild,style: TextStyle(
+                          fontSize: fontsize,
+                          color: Colors.red,
+                        ),),
+                      )
+                    ],
+                  ),
+                ],
               ),
-              SizedBox(height: height * 1.5,),
 
-              Container(
-                padding: EdgeInsets.all(10.0),
-                height: height,
-                width: width,
-                color: Colors.orange,
-                child: Text(afeild),
-              )
-            ],
-          ),
-          ],
-        ),
-
-        Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-          Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              Container(
-                padding: EdgeInsets.all(10.0),
-                height: height,
-                width: width,
-                color: Colors.blue,
-                child: Text(afeild),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      Container(
+                        padding: EdgeInsets.all(10.0),
+                        height: height,
+                        width: width,
+                        color: Colors.orangeAccent,
+                        child: Text(afeild,style: TextStyle(
+                          fontSize: fontsize,
+                          color: Colors.blue,
+                        ),),
+                      ),
+                      SizedBox(height: height * 3,),
+                      Container(
+                        padding: EdgeInsets.all(10.0),
+                        height: height,
+                        width: width,
+                        color: Colors.black,
+                        child: Text(afeild,style: TextStyle(
+                          fontSize: fontsize,
+                          color: Colors.yellow,
+                        ),),
+                      )
+                    ],
+                  ),
+                ],
               ),
-              SizedBox(height: height * 3,),
-              Container(
-                padding: EdgeInsets.all(10.0),
-                height: height,
-                width: width,
-                color: Colors.lightGreen,
-                child: Text(afeild),
-              )
-            ],
-          ),
-          ],
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      Container(
+                        padding: EdgeInsets.all(10.0),
+                        height: height,
+                        width: width,
+                        color: Colors.red,
+                        child: Text(afeild,style: TextStyle(
+                          fontSize: fontsize,
+                          color: Colors.yellow,
+                        ),),
+                      ),
+                      SizedBox(height: height * 1.5,),
+                      Container(
+                        padding: EdgeInsets.all(10.0),
+                        height: height,
+                        width: width,
+                        color: Colors.green,
+                        child: Text(afeild,style: TextStyle(
+                          fontSize: fontsize,
+                          color: Colors.pink[500],
+                        ),),
+                      )
+                    ],
+                  ),
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+
+                      Container(
+                        padding: EdgeInsets.all(10.0),
+                        height: height,
+                        width: width,
+                        color: Colors.cyan,
+                        child: Text(afeild,style: TextStyle(
+                          fontSize: fontsize,
+                          color: Colors.pink[500],
+                        ),),
+                      ),
+                      Container(
+                        padding: EdgeInsets.all(10.0),
+                        height: height,
+                        width: width,
+                        color: Colors.lightGreen,
+                        child: Text(afeild,style: TextStyle(
+                          fontSize: fontsize,
+                          color: Colors.cyanAccent,
+                        ),),
+                      )
+                    ],
+                  ),
+                ],
+              ),
+
+
+
+
+
+                ],
+
+
 
         ),
-      ]
-    ),
+      ),
 
 
 
- // This trailing comma makes auto-formatting nicer for build methods.
+      // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }
